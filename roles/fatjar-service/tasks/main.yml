@@ -23,16 +23,12 @@
   notify:
     - Start demo
 
-- name: Copy far to server
+- name: Copy fat jar to server
   copy:
     src: micronaut-demo-0.1-all.jar
     dest: /opt/demo/
-    mode: 0755
-    owner: root
-    group: root
   notify:
     - Start demo
-
 
 - name: Copy binary to server
   copy:
