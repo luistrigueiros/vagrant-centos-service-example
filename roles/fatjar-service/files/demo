@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+#JAVA_HOME=/path/to/jvmdir
+WORKDIR=/opt/demo
+JAVA_OPTIONS=" -Xms256m -Xmx512m -server "
+#APP_OPTIONS=" -c /path/to/app.config -d /path/to/datadir "
+cd $WORKDIR
+#"${JAVA_HOME}/bin/java" $JAVA_OPTIONS -jar javaapp.jar $APP_OPTIONS
+java -jar micronaut-demo-0.1-all.jar $APP_OPTIONS

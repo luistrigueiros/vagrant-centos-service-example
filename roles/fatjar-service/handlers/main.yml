@@ -1,0 +1,8 @@
+---
+# handlers file for fatjar-service
+# handlers file for demo
+- name: Start demo
+  systemd:
+    name: demo
+    state: started
+    enabled: yes

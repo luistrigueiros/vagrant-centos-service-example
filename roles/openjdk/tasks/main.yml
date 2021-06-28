@@ -1,0 +1,6 @@
+---
+- name: upgrade all packages
+  yum: name=* state=latest
+
+- name: Install OpenJDK.
+  yum: name=java-11-openjdk-devel state=present
